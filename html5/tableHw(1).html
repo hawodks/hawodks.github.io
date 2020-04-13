@@ -1,22 +1,55 @@
-<!DOCTYPE html> <!-- tableHw(1).html-->
+<!DOCTYPE html> <!-- timeTableJK.html-->
 <html lang="ko">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     
-    <title>HTML5  테이블 테스트 실습 </title>
+    <style>
+    table,tr,th,td{
+        border:1px solid black;
+        border-collapse:collapse;
+        text-align:center;
+    }
+    th,td{
+        width:50px;
+    }
+    .subject1{
+        background-color:lightgray;
+    }
+    .subject2{
+        background-color:lightblue;
+    }
+    .subject3{
+        background-color:green;
+    }
+    .subject4{
+        background-color:#DF0101;
+    }
+    .subject5{
+        background-color:#D358F7;
+    }
+    </style><!-- border-collapse:collapse 단선으로, 반대는 separate -->
+    <title>HTML5  20141168 김재안 시간표 </title>
 </head>
-<body>
-    <h1>테이블 태그</h1>
-    <table border=1>
-    <thead>
-        <tr><th>셀(1,1)</th> <th>셀(1,2)</th> <th>셀(1,3)</th> </tr>
-    </thead>
-    <tbody>
-        <tr><td rowspan="3">셀(2,1)</td> <td>셀(2,2)</td><td>셀(2,3)</td> </tr>
-        <tr><td colspan="2">셀(3,1)</td></tr>
-        <tr><td>셀(4,1)</td>            <td>셀(4,2)</td></tr>
-    </tbody>
-    </table><hr/>
+<body>    
+    <table>
+        <caption>&lt;김재안&gt;시간표</caption>
+        <thead>
+            <tr><th></th> <th>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> <th>토</th>
+        </thead>
+
+        <tbody>
+            <tr><td>1교시</td> <td>9시</td> <td>셀2</td> <td>셀3</td> <td rowspan="2" class="subject1">자료구조 및 실습</td> <td>셀5</td> <td>셀6</td> <td class="subject5">프로젝트 관리</td> </tr>
+            <tr><td>2교시</td> <td>10시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>3교시</td> <td>11시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>4교시</td> <td>12시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>5교시</td> <td>1시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>6교시</td> <td>2시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>7교시</td> <td>3시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>8교시</td> <td>4시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+            <tr><td>9교시</td> <td>5시</td> <td>셀2</td> <td>셀3</td> <td>셀4</td> <td>셀5</td> <td>셀6</td> </tr>
+
+        </tbody>
+    </table>
 </body>
 </html>
